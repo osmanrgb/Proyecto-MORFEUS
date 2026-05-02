@@ -1,0 +1,22 @@
+{
+  "titulo": "Demo - Barbería Don Carlos",
+  "producto": "Barbería Don Carlos",
+  "turnos": [
+    {
+      "speaker": "socrates",
+      "text": "Dime, joven aprendiz, ¿qué hace que un corte de cabello sea verdaderamente memorable?"
+    },
+    {
+      "speaker": "skeleton",
+      "text": "Que después de muerto la gente aún recuerde tu fade, Sócrates. En la Barbería Don Carlos te dejan así de bueno."
+    },
+    {
+      "speaker": "socrates",
+      "text": "Y entonces, ¿el cabello es reflejo del alma?"
+    },
+    {
+      "speaker": "skeleton",
+      "text": "Más bien del barbero. Don Carlos te baja el ego y te sube el rating. Búscalo, no te arrepentirás."
+    }
+  ]
+}

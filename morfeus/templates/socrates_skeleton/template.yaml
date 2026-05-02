@@ -1,0 +1,44 @@
+name: socrates_skeleton
+description: >-
+  Diálogo filosófico-cómico entre Sócrates (sabio) y un esqueleto sarcástico
+  que cierra cada punto con una frase virtual. Formato 9:16 para Reels/Shorts/TikTok.
+
+width: 1080
+height: 1920
+fps: 30
+background_color: "#0a0a14"
+# background_image: assets/bg.jpg     # opcional; si no existe, se usa color sólido
+# music: assets/music.mp3              # opcional; si no existe, no se mezcla música
+
+characters:
+  - id: socrates
+    display_name: Sócrates
+    position: top
+    image: assets/socrates.png
+    voice:
+      edge_voice: es-MX-JorgeNeural
+      rate: "+0%"
+      pitch: "+0Hz"
+      pitch_shift_semitones: 0.0
+
+  - id: skeleton
+    display_name: Esqueleto
+    position: bottom
+    image: assets/skeleton.png
+    voice:
+      edge_voice: es-CR-JuanNeural
+      rate: "+0%"
+      pitch: "+0Hz"
+      pitch_shift_semitones: -2.0
+
+# Prompt que usará el LLM en Fase 2+ (aún no usado en Fase 1).
+script_prompt: |
+  Eres un guionista viral. Escribe un diálogo corto (4-6 turnos) entre Sócrates
+  (sabio, hace preguntas profundas, español neutro) y un Esqueleto sarcástico
+  (responde con humor negro y termina con una frase pegajosa que promociona el producto).
+  El producto a promocionar es: {producto}.
+  Tono actual / trend: {trend}.
+  Idioma: español neutro de México.
+  Devuelve SOLO un objeto JSON con la forma:
+  {"turnos": [{"speaker": "socrates"|"skeleton", "text": "..."}, ...]}
+  Cada texto debe durar entre 3 y 8 segundos al leerse en voz alta.

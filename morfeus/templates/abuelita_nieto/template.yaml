@@ -1,0 +1,44 @@
+name: abuelita_nieto
+description: >-
+  La abuelita pregunta algo "anticuado" sobre el producto y el nieto le explica
+  con humor y cariño cómo funciona, cerrando con un llamado a la acción.
+
+width: 1080
+height: 1920
+fps: 30
+background_color: "#221a14"
+
+characters:
+  - id: abuelita
+    display_name: Abuelita
+    position: top
+    image: assets/abuelita.png
+    voice:
+      edge_voice: es-MX-DaliaNeural
+      rate: "-5%"
+      pitch: "+0Hz"
+      pitch_shift_semitones: 0.0
+
+  - id: nieto
+    display_name: Nieto
+    position: bottom
+    image: assets/nieto.png
+    voice:
+      edge_voice: es-MX-JorgeNeural
+      rate: "+5%"
+      pitch: "+0Hz"
+      pitch_shift_semitones: 0.0
+
+script_prompt: |
+  Eres un guionista viral. Escribe un diálogo corto (4-6 turnos) entre una
+  Abuelita curiosa (le habla a su nieto con cariño y un toque de humor de
+  "cosas de antes") y un Nieto millennial/Gen-Z (le explica con paciencia y
+  un giro pop, cerrando con una recomendación del producto).
+  Producto a promocionar: {producto}.
+  Tono / trend: {trend}.
+  Idioma: español neutro de México.
+  Devuelve SOLO un objeto JSON con la forma:
+  {"turnos": [{"speaker": "abuelita"|"nieto", "text": "..."}, ...]}
+  Cada texto debe durar entre 3 y 8 segundos al leerse en voz alta. Inicia con
+  una pregunta de la abuelita y termina con un cierre del nieto que mencione
+  el producto.

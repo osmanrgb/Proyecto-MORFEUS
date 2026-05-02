@@ -1,0 +1,22 @@
+{
+  "titulo": "Demo - App de delivery",
+  "producto": "App de delivery RápidoYa",
+  "turnos": [
+    {
+      "speaker": "abuelita",
+      "text": "Mijito, ¿y eso del celular para pedir comida cómo es? ¿Le marcas tú al señor del restaurante?"
+    },
+    {
+      "speaker": "nieto",
+      "text": "No abuelita, ahora todo es por la app. Aprietas un botón y te llega como por arte de magia."
+    },
+    {
+      "speaker": "abuelita",
+      "text": "¿Y no se enoja el señor si no le hablas tan bonito como yo?"
+    },
+    {
+      "speaker": "nieto",
+      "text": "Para nada, abuelita. Bájate RápidoYa y te llega tu antojito en quince minutos. Hasta a los abuelos los consiente."
+    }
+  ]
+}
